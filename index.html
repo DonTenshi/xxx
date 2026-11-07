@@ -95,9 +95,27 @@
             </div>
 
             <div class="info">
-                <span> Adezzz
+                <br> Adezzz
+                <br> <br>
+                <span id="contador-visitas"></span> personas han visto esta página
             </div>
         </div>
+
+        <script data-goatcounter="https://xxx.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+        <script>
+            var t = setInterval(function() {
+                if (window.goatcounter && window.goatcounter.visit_count) {
+                    clearInterval(t);
+                    window.goatcounter.visit_count({
+                        append: '#contador-visitas',
+                        path: 'TOTAL', 
+                        type: 'html'
+                    });
+                }
+            }, 100);
+        </script>
     </body>
 
     </html>
