@@ -3,12 +3,24 @@
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title> Bango</title>
+        <title> VanGogh </title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+
         <style>
             *{
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+            }
+
+            .portada {
+                width: 100%;           /* Ocupa todo el ancho del cuadro */
+                max-width: 250px;      /* Pero no crece más de 250px */
+                height: auto;          /* Mantiene la proporción */
+                border-radius: 15px;   /* Bordes redondeados */
+                margin-bottom: 20px;   /* Separación con el título de abajo */
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra bonita */
+                border: 2px solid rgba(255, 255, 255, 0.2); /* Un borde sutil */
             }
             
             body {
@@ -20,8 +32,10 @@
                 padding: 20px;
             }
 
-            .player-container {
-                background: rgba(255, 255, 255, 0.1);
+           .player-container {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('portada.jpg');
+                background-size: cover;
+                background-position: center;
                 backdrop-filter: blur(10px);
                 padding: 40px;
                 border-radius: 20px;
@@ -31,20 +45,32 @@
                 width: 100%;
                 border: 1px solid rgba(255, 255, 255, 0.2);
             }
-
+            
             h1 {
+                font-family: 'Montserrat', sans-serif; /* Aplica la nueva fuente */
+                font-weight: 900;                      /* Letra extra gruesa */
+                text-transform: uppercase;             /* Todo en mayúsculas */
+                letter-spacing: 2px;                   /* Un poco de espacio entre letras */
+    
+                /* Mantén lo que ya tenías para la cajita */
                 color: #fff;
-                font-size: 28px;
+                font-size: 32px;                       /* Un poco más grande */
                 margin-bottom: 10px;
+                background: rgba(0, 0, 0, 0.6);
+                padding: 10px 20px;
+                border-radius: 10px;
+                display: inline-block;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
             }
 
             .artist{
-                color: #aaa;
-                font-size: 16px;
+                color: #fff; /* Letra blanca pura */
+                font-size: 18px;
                 margin-bottom: 30px;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); /* Sombra fuerte para que resalte sobre el fondo */
             }
 
-            audio{
+            audio{ 
                 width: 100%;
                 margin: 20px 0;
                 border-radius: 10px;
@@ -81,7 +107,7 @@
 
     <body>
         <div class="player-container">
-            <h1> Bango </h1>
+            <h1> VanGogh </h1>
 
             <p class="artista"> Bango </p>
 
