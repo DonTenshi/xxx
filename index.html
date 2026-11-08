@@ -118,6 +118,9 @@
 
             <div class="info">
                 <span> Presiona play </span> para escuchar
+                <br><br>
+                <!-- Aquí irá la insignia -->
+                <img src="https://visitor-badge.laobi.icu/badge?page_id=dontenshi-reina&left_text=Visitas" alt="Contador de visitas">
             </div>
 
             <div class="info">
@@ -126,22 +129,6 @@
                 <span id="contador-visitas"></span> personas han visto esta página
             </div>
         </div>
-
-        <script data-goatcounter="https://xxx.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-
-        <script>
-            var t = setInterval(function() {
-                if (window.goatcounter && window.goatcounter.visit_count) {
-                    clearInterval(t);
-                    window.goatcounter.visit_count({
-                        append: '#contador-visitas',
-                        path: 'TOTAL', 
-                        type: 'html'
-                    });
-                }
-            }, 100);
-        </script>
     </body>
 
     </html>
